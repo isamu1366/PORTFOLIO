@@ -1,0 +1,186 @@
+@charset "utf-8";
+
+
+
+
+body,html,#mainimg {width: 100%;height: 100%;}
+body {
+	margin: 0px;
+	padding: 0px;
+	color: white;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 14px;	
+	line-height: 2;	
+	background: black;	
+}
+header{
+	display: flex;
+	justify-content: space-around;
+	height: 10vh;
+}
+header h1{
+	font-size: 40px;
+	align-items: center;
+}
+.tab-nav {
+	display: flex;
+	text-align: center;
+	align-items: center;
+  }
+  
+  .tab-nav li {
+	border-right: 1px solid white;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+
+  }
+  
+  .tab-nav li:first-child {
+	border-left: 1px solid white;
+  }
+  
+  .tab-nav li a {
+	display: block;
+	padding: 5px 10px;
+	color: gray;
+	text-decoration: none;
+  }
+  
+  .tab-content {
+	width: 100%;
+	height: 80%;
+	z-index: -1;
+  }
+  .tab-content span {
+	  color: white;
+  }
+  .active{
+	  background-color: red;
+  }
+  
+  .tab-content > .active {
+	display: block;
+  }
+  
+  .tab-content > div {
+	display: none;
+	height: 100%;
+	line-height: 24px;
+  }
+  footer{
+	  height:10vh;
+	  width: 100%;
+	  display: flex;
+	  align-items: center; 
+	  justify-content: center;
+  }
+
+
+@keyframes img {
+0% {opacity: 0;}
+100% {opacity: 1;}
+}
+
+#mainimg {
+	background:black;
+}
+#mainimg ul {
+	height: 100%;
+}
+
+#mainimg li {
+	float: left;		
+	width: 25%;			
+	height: 100%;		
+	animation-name: img;		
+	animation-duration: 0.5S;	
+	animation-fill-mode: both;	
+	position: relative;
+	overflow: hidden;
+}
+#mainimg a {
+	display: block;text-decoration: none;
+	text-align: center;
+	height: 100%;
+	background: rgba(0,0,0,0.7);	
+}
+
+#mainimg a span {
+	display: block;
+	position: absolute;
+	left: 0px;		
+	bottom: 45%;	
+	width: 100%;
+	background: black;				
+	background: rgba(0,0,0,0.5);	
+	padding: 30px 0;	
+}
+
+#mainimg a:hover {
+	background: transparent;	
+}
+#mainimg a:hover span {
+	background: red;				
+}
+
+#img1 {
+	animation-delay: 2s;	
+	background: url(../img/1.jpg) no-repeat center center;			
+	background: url(../img/1.jpg) no-repeat center center / cover;	
+}
+
+#img2 {
+	animation-delay: 2.2s;	
+	background: url(../img/2.jpg) no-repeat center center;			
+	background: url(../img/2.jpg) no-repeat center center / cover;	
+}
+
+#img3 {
+	animation-delay: 2.4s;	
+	background: url(../img/3.jpg) no-repeat center center;			
+	background: url(../img/3.jpg) no-repeat center center / cover;	
+}
+
+#img4 {
+	animation-delay: 2.6s;	
+	background: url(../img/4.jpg) no-repeat center center;			
+	background: url(../img/4.jpg) no-repeat center center / cover;	
+}
+
+
+
+@media screen and (orientation: portrait){
+
+
+#mainimg li {
+	width: 50%;			
+	height: 50%;		
+}
+
+
+#mainimg a span {
+	left: 0px;		
+	bottom: 0px;	
+}
+
+}
+
+
+
+
+@media screen and (max-width:800px){
+
+#mainimg a {
+	background: transparent;
+}
+header{
+	height: 20vh;
+	align-items: center;
+	text-align: center;
+}
+header h1{
+	font-size: 24px;
+	align-items: center;
+}
+
+}
