@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "utf-8";
 body,html,#mainimg {width: 100%;height: 100%;}
 body {
 	margin: 0px;
@@ -41,21 +41,20 @@ header h1{
 	color: gray;
 	text-decoration: none;
   }
-  main{
-    width: 100%;
+  
+  .tab-content {
+	width: 100%;
 	height: 80%;
 	z-index: -1;
-      margin: 0 auto;
-      /* overflow: hidden; */
+	margin: 0 auto;
   }
- 
-h1{
-    text-align: center;
-    margin: 30px auto;
+  .tab-content h1{
+	text-align: center;
+    margin: 0 auto 30px 0;
     font-size: 32px;
-}
 
-dl{
+  }
+  dl{
     /* width: 100vw; */
     display: flex;
     flex-wrap: wrap;
@@ -119,3 +118,76 @@ footer{
     justify-content: center;
 }
 
+@media screen and (orientation: portrait){
+
+
+#mainimg li {
+	width: 50%;			
+	height: 50%;		
+}
+
+
+#mainimg a span {
+	left: 0px;		
+	bottom: 0px;	
+}
+
+}
+
+
+
+
+@media screen and (max-width:800px){
+
+#mainimg a {
+	background: transparent;
+}
+header{
+	height: 20vh;
+	align-items: center;
+	text-align: center;
+}
+header h1{
+	font-size: 24px;
+	align-items: center;
+}
+
+}
+
+
+@media screen and (orientation: portrait){
+
+
+	#mainimg li {
+		width: 50%;			
+		height: 50%;		
+	}
+	
+	
+	#mainimg a span {
+		left: 0px;		
+		bottom: 0px;	
+	}
+	
+	}
+	
+	
+	
+	
+	@media screen and (max-width:800px){
+	
+	#mainimg a {
+		background: transparent;
+	}
+	header{
+		height: 20vh;
+		align-items: center;
+		text-align: center;
+	}
+	header h1{
+		font-size: 24px;
+		align-items: center;
+	}
+	
+	}
+	
