@@ -41,6 +41,9 @@ header h1{
 	color: gray;
 	text-decoration: none;
   }
+  .active{
+    background-color: red;
+}
   main {
     display: flex;
     border-top: solid 2px red;
