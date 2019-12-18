@@ -121,22 +121,22 @@ header h1{
 
 #img1 {
 	animation-delay: 1s;	
-	background: url(../img/1.jpg) no-repeat center center / cover;	
+	background: url(../img/aien.jpg) no-repeat center center / cover;	
 }
 
 #img2 {
 	animation-delay: 1.2s;			
-	background: url(../img/2.jpg) no-repeat center center / cover;	
+	background: url(../img/kyoto.jpg) no-repeat center center / cover;	
 }
 
 #img3 {
-	animation-delay: 1.4s;		
-	background: url(../img/3.jpg) no-repeat center center / cover;	
+	animation-delay: 1.4s;			
+	background: url(../img/team.jpg) no-repeat center center / cover;	
 }
 
 #img4 {
-	animation-delay: 1.6s;			
-	background: url(../img/4.jpg) no-repeat center center / cover;	
+	animation-delay: 1.6s;		
+	background: url(../img/typing.jpg) no-repeat center center / cover;	
 }
 
 
@@ -190,8 +190,8 @@ header h1{
 	#mainimg a span {
 		left: 0px;		
 		bottom: 0px;	
-	}
-	header {
+    }
+    header {
         height: 20vh;
     }
 	
