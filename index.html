@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <h1>ISAMU TAMURA'S PORTFOLIO</h1>
+        <h1><a href="index.html" style="text-decoration: none;color: white;">ISAMU TAMURA'S PORTFOLIO</a></h1>
         <ul class="tab-nav">
             <li><a href="#tab01" class="active">EN</a></li>
             <li><a href="#tab02">JP</a></li>
@@ -24,9 +24,9 @@
         <div id="tab01" class="active">
             <nav id="mainimg">
                 <ul>
-                    <li id="img1"><a href=""><span>Works</span></a></li>
-                    <li id="img2"><a href=""><span>Profile</span></a></li>
-                    <li id="img3"><a href=""><span>Hobby</span></a></li>
+                    <li id="img1"><a href="https://github.com/isamu1366/"><span>Works</span></a></li>
+                    <li id="img2"><a href="profile.html"><span>Profile</span></a></li>
+                    <li id="img3"><a href="hobby.html"><span>Hobby</span></a></li>
                     <li id="img4"><a href="contact.html"><span>Contact</span></a></li>
                 </ul>
             </nav>
@@ -34,10 +34,10 @@
         <div id="tab02" >
             <nav id="mainimg">
                 <ul>
-                    <li id="img1"><a href=""><span>制作物</span></a></li>
-                    <li id="img2"><a href=""><span>自己紹介</span></a></li>
-                    <li id="img3"><a href=""><span>趣味</span></a></li>
-                    <li id="img4"><a href=""><span>お問い合わせ</span></a></li>
+                    <li id="img1"><a href="https://github.com/isamu1366/"><span>制作物</span></a></li>
+                    <li id="img2"><a href="profile.html"><span>自己紹介</span></a></li>
+                    <li id="img3"><a href="hobby.html"><span>趣味</span></a></li>
+                    <li id="img4"><a href="contact.html"><span>お問い合わせ</span></a></li>
                 </ul>
             </nav>
      
@@ -45,10 +45,10 @@
         <div id="tab03">
             <nav id="mainimg">
                 <ul>
-                    <li id="img1"><a href=""><span>工作</span></a></li>
-                    <li id="img2"><a href=""><span>自我介绍</span></a></li>
-                    <li id="img3"><a href=""><span>爱好</span></a></li>
-                    <li id="img4"><a href=""><span>联系方式</span></a></li>
+                    <li id="img1"><a href="https://github.com/isamu1366/"><span>工作</span></a></li>
+                    <li id="img2"><a href="profile.html"><span>自我介绍</span></a></li>
+                    <li id="img3"><a href="hobby.html"><span>爱好</span></a></li>
+                    <li id="img4"><a href="contact.html"><span>联系方式</span></a></li>
                 </ul>
             </nav>
         </div>
@@ -63,25 +63,8 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/assets/js/app.js"></script>
 
-    <script>
-        $(".tab-nav a").on("click", function () {
-
-            $(".tab-nav a").removeClass("active");
-            $(this).addClass("active");
-            return false;
-
-
-        })
-        $(".tab-nav a").on("click", function () {
-
-            $(".tab-content div").removeClass("active");
-            $(this.hash).addClass("active");
-            return false;
-
-
-        })
-    </script>
 </body>
 
 </html>
