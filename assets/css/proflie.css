@@ -47,21 +47,19 @@ header h1{
   main {
     display: flex;
     border-top: solid 2px red;
-    margin-top: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
     overflow: hidden;
 }
 
 .article-content {
     width: 100vw;
     border-bottom: solid 2px red;
-    margin-bottom: 50px;
-    padding: 2%;
+    padding: 3%;
     display: flex;
     justify-content: space-around;
     -webkit-box-align: center;
     align-items: center;
+    box-sizing: border-box;
+
 }
 .content-pic {
     width: 20%;
